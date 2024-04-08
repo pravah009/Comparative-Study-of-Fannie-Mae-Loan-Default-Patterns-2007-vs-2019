@@ -1,0 +1,363 @@
+---
+title: "A Comparative Study of Credit Scores in  association with Fannie Mae Loan Default Patterns: 2007 vs. 2019"
+author: Pravah Malunjkar
+format: html
+output: bookdown::html_document2
+toc: false
+editor: visual
+---
+
+```{=html}
+<!This block assists in formatting the title, font size, chart caption, etc.– –>
+<style type="text/css">
+  .title {
+    text-align: left;
+}
+body{ /* Normal  */
+      font-size: 16px;
+      margin: 2.5cm;
+      top: 1.5cm;
+      text-align: justify;
+  }
+  .caption {
+    font-size: big;
+    text-align: center;
+    position: above;
+}
+</style>
+```
+```{css plotly-caption, echo = FALSE}
+/*Include this block if you like the chart caption at the top instead of the bottom.*/
+div.figure {
+  display: table;
+}
+div.figure p {
+  display: table-caption;
+  caption-side: top;
+}
+```
+
+------------------------------------------------------------------------
+
+**Introduction:**
+
+Making wise selections in the mortgage business requires an understanding of past loan default trends. We examine the loan default rates that Fannie Mae bought in the fourth quarters of 2007 and 2019 in this paper. Our objective is to obtain insights from the credit score data that help direct strategic decision-making by examining variables like borrower characteristics and economic situations and visualising important indicators.
+
+**Findings**:
+
+Our analysis reveals notable differences in default trends between 2007 and 2019. In 2007, during the peak of the financial crisis, default rates were significantly higher compared to 2019. \@ref(fig:1) This difference is evident across various borrower groups and loan characteristics. For instance, loans with higher loan-to-value ratios and lower credit scores experienced more defaults in 2007, reflecting the impact of sub-prime lending practices and deteriorating economic conditions.
+
+Media reports from the time support our findings. According to The Wall Street Journal, the subprime mortgage crisis led to a surge in default rates, particularly among borrowers with lower credit scores and riskier loan structures (Brooks and Ford, 2007). Not only was the default rate high, it was nearly nine times the 23-year average of 0.014. Similarly, CNBC ("Subprime Debacle Traps Even Very Credit-Worthy," 2007) reported on the widespread impact of the housing market crash, highlighting the correlation between high loan-to-value ratios \@ref(fig:5) and increased default rates.
+
+Observing \@ref(fig:5) in 2007, first-time homebuyers were more likely than repeat buyers to have a greater loan-to-value ratio. For both first-time and seasoned homebuyers, the most typical loan-to-value ratio ranged from 75% to 100%. On the other hand, compared to recurrent purchasers, a notably greater proportion of first-time homebuyers had a loan-to-value ratio over 75%. The possible reasoning behind the same was that lenders were more inclined to provide easy credit prior to the 2008 financial crisis, particularly sub-prime mortgages with low down payments. First-time homeowners may have had an easier time qualifying for mortgages with larger loan-to-value ratios as a result of this. Due to their eagerness to enter the property market, first-time home-buyers may have been more prone to take advantage of these easy lending choices.
+
+To support this argument it can be evidently seen in \@ref(fig:2) where credit scores for borrowers in 2007, is less aggressively skewed, than 2019, and regardless the low credit scores people received mortgages conveniently as a result of poor practices by the banks \@ref(fig:4). The financial crisis led to mass unemployment and fall of the average credit score during the 2007-2008 period. Consequently the financial framework must have undergone a restructuring to allow people to rebuilt their credit score in the coming year. In 2019 more people have high scores that can be categorized as "very good" or "excellent" (Equifax).
+
+Leading us back to the loan to value argument for 2019, we see the trend reversed \@ref(fig:6). First-time home-buyers had lower loan-to-value ratios than repeat buyers. Either this suggests that the credit practices we made more strict or the borrower behavior experienced a shift. Credit score category association to default rates \@ref(fig:3) however have remained the same where buyers in Poor, Fair and Good categories in 2007 and 2019 have had the most default rates.
+
+Conversely, in 2019, default rates were generally lower \@ref(fig:1), indicating a more stable market environment and improved borrower credit profiles. Forbes discussed the positive trends in the mortgage market, attributing lower default rates to stricter lending standards and a healthier economy (Richardson, 2021). Additionally, Forbes reported on the record-low mortgage delinquency rates in 2019, further supporting our analysis of improved borrower credit profiles and market stability.
+
+Regional analysis of default rates in US states show that buyers were more likely to default on their loans if they resided near either coasts of the country during the financial crisis of 2008 \@ref(fig:7). The likely however was very low and rather opposite as the housing prices in the same states rose drastically, inversely increasing the demand for homes in in-land states \@ref(fig:8).
+
+**Conclusion:**
+
+Finally, our analysis emphasises how crucial market dynamics and historical context are to comprehending loan default trends for loans that were acquired by Fannie Mae. Due to subprime lending practices and unstable economic conditions, the financial crisis of 2007 resulted in higher default rates; nevertheless, the more favourable conditions of 2019 led to lower default rates and better borrower credit profiles. Stakeholders may improve risk management tactics, streamline underwriting procedures, and adjust to changing market conditions in the mortgage sector by utilising the information from our investigation.
+
+(Word count: 747)
+
+**Works cited:**
+
+*Articles*. Equifax. (n.d.). <https://www.equifax.com/personal/education/credit/score/articles/-/learn/credit-score-ranges/>
+
+Brooks, R., & Ford, C. M. (2007, October 11). The United States of subprime - WSJ. <https://www.wsj.com/articles/SB119205925519455321>
+
+Brooks, R., & Simon, R. (2007, December 3). Subprime debacle traps even very credit-worthy - WSJ. <https://www.wsj.com/articles/SB119662974358911035>
+
+Chang, D. (2023, October 26). *The Subprime Mortgage Crisis of 2008: A beginner's guide*. The Motley Fool. <https://www.fool.com/the-ascent/mortgages/subprime-mortgage-crisis/#:~:text=The%20subprime%20mortgage%20crisis%20occurred%20from%202007%20to%202010%20after%20the%20collapse%20of%20the%20U.S.%20housing%20market.,their%20loans.>
+
+Kenton, W. (2022, April 16). *What was the subprime meltdown? what happened and consequences*. Investopedia. <https://www.investopedia.com/terms/s/subprime-meltdown.asp#:~:text=The%20subprime%20meltdown%20was%20the%20sharp%20increase%20in%20high-risk,in%202007.>
+
+McArthur, C., & Edelman, S. (2024, March 22). *The 2008 housing crisis*. Center for American Progress. <https://www.americanprogress.org/article/2008-housing-crisis/#:~:text=In%202007%2C%20during%20the%20peak%20of%20the%20financial%20crisis%2C,to%202019.>
+
+Richardson, B. (2021, July 14). *Mortgage market is finally turning a corner on delinquency rates*. Forbes. <https://www.forbes.com/sites/brendarichardson/2021/07/13/mortgage-market-is-finally-turning-a-corner-on-delinquency-rates/?sh=6a5a0482266c>
+
+<br>
+
+### Figure Appendix {.unnumbered}
+
+```{r packages-data, include = FALSE}
+# This is the code block for tasks that do not generate charts, such as loading data, importing packages, data cleaning, and variable manipulation. 
+
+#install.packages('tidyverse')
+#install.packages('gapminder') 
+#install.packages('gganimate') 
+#install.packages('gifski')
+#install.packages('plotly')
+library(tidyverse)
+library(ggplot2)
+library(gganimate)
+library(gifski)
+library(reshape2)
+library(dplyr)
+library(plotly)
+
+data_07 = read_rds('data_sample_2007Q4.rds')
+data_19 = read_rds('data_sample_2019Q4.rds')
+def_rate = read_csv('default_rate_ts.csv')
+
+summary(data_07)
+summary(data_19)
+
+# Replace NA values in numeric variable columns with mean value or 0
+
+# For data_07
+data_07$CURR_RATE[is.na(data_07$CURR_RATE)] <- mean(data_07$CURR_RATE, na.rm = TRUE)
+data_07$ORIG_UPB[is.na(data_07$ORIG_UPB)] <- mean(data_07$ORIG_UPB, na.rm = TRUE)
+data_07$ORIG_TERM[is.na(data_07$ORIG_TERM)] <- mean(data_07$ORIG_TERM, na.rm = TRUE)
+data_07$OLTV[is.na(data_07$OLTV)] <- mean(data_07$OLTV, na.rm = TRUE)
+data_07$OCLTV[is.na(data_07$OCLTV)] <- mean(data_07$OCLTV, na.rm = TRUE)
+data_07$DTI[is.na(data_07$DTI)] <- mean(data_07$DTI, na.rm = TRUE)
+data_07$CSCORE_B[is.na(data_07$CSCORE_B)] <- mean(data_07$CSCORE_B, na.rm = TRUE)
+data_07$CSCORE_C[is.na(data_07$CSCORE_C)] <- 0
+data_07$MI_PCT[is.na(data_07$MI_PCT)] <- mean(data_07$MI_PCT, na.rm = TRUE)
+
+# For data_19
+data_19$CURR_RATE[is.na(data_19$CURR_RATE)] <- mean(data_19$CURR_RATE, na.rm = TRUE)
+data_19$ORIG_UPB[is.na(data_19$ORIG_UPB)] <- mean(data_19$ORIG_UPB, na.rm = TRUE)
+data_19$ORIG_TERM[is.na(data_19$ORIG_TERM)] <- mean(data_19$ORIG_TERM, na.rm = TRUE)
+data_19$OLTV[is.na(data_19$OLTV)] <- mean(data_19$OLTV, na.rm = TRUE)
+data_19$OCLTV[is.na(data_19$OCLTV)] <- mean(data_19$OCLTV, na.rm = TRUE)
+data_19$DTI[is.na(data_19$DTI)] <- mean(data_19$DTI, na.rm = TRUE)
+data_19$CSCORE_B[is.na(data_19$CSCORE_B)] <- mean(data_19$CSCORE_B, na.rm = TRUE)
+data_19$CSCORE_C[is.na(data_19$CSCORE_C)] <- mean(data_19$CSCORE_C, na.rm = TRUE)
+data_19$MI_PCT[is.na(data_19$MI_PCT)] <- mean(data_19$MI_PCT, na.rm = TRUE)
+
+# Define credit score ranges correctly
+credit_score_ranges <- c("Excellent", "Very good", "Good", "Fair", "Poor")
+credit_score_cutoffs <- c(850, 799, 739, 669, 579, 300) # Adjusted cutoffs to correctly match ranges
+
+# Adjust the creation of new variable for credit score range in datasets
+data_07$CREDIT_SCORE_RANGE <- cut(data_07$CSCORE_B, breaks = rev(credit_score_cutoffs), labels = rev(credit_score_ranges), include.lowest = TRUE)
+data_19$CREDIT_SCORE_RANGE <- cut(data_19$CSCORE_B, breaks = rev(credit_score_cutoffs), labels = rev(credit_score_ranges), include.lowest = TRUE)
+
+# Convert FIRST_FLAG to a factor for better visualization
+data_07$FIRST_FLAG <- factor(data_07$FIRST_FLAG, levels = c("N", "Y"), labels = c("Returning", "First-Time"))
+data_19$FIRST_FLAG <- factor(data_19$FIRST_FLAG, levels = c("N", "Y"), labels = c("Returning", "First-Time"))
+
+# Calculate default rate within credit score range groups
+default_rate_by_credit_07 <- aggregate(DEFAULT_FLAG ~ CREDIT_SCORE_RANGE, data = data_07, FUN = mean)
+colnames(default_rate_by_credit_07) <- c("CREDIT_SCORE_RANGE", "DEFAULT_RATE")
+
+default_rate_by_credit_19 <- aggregate(DEFAULT_FLAG ~ CREDIT_SCORE_RANGE, data = data_19, FUN = mean)
+colnames(default_rate_by_credit_19) <- c("CREDIT_SCORE_RANGE", "DEFAULT_RATE")
+
+# Aggregate default rate by state
+default_rate_by_state_07 <- aggregate(DEFAULT_FLAG ~ STATE, data = data_07, FUN = mean)
+default_rate_by_state_19 <- aggregate(DEFAULT_FLAG ~ STATE, data = data_19, FUN = mean)
+
+orig_upb_by_credit_07 <- aggregate(ORIG_UPB ~ CREDIT_SCORE_RANGE, data = data_07, FUN = mean)
+orig_upb_by_credit_19 <- aggregate(ORIG_UPB ~ CREDIT_SCORE_RANGE, data = data_19, FUN = mean)
+
+summary(data_07)
+summary(data_19)
+```
+
+```{r 1, echo = FALSE, fig.width=10, fig.height = 4, fig.cap="Time Series Plot of Default Rates (2000-2023)"}
+# Convert Date column to Date format
+def_rate$Date <- as.Date(def_rate$Date, format = "%m/%d/%Y")
+
+mean_def_rate <- mean(def_rate$`Default rate`)
+
+# Create ggplot object
+animated_plot <- ggplot(def_rate, aes(x = Date, y = `Default rate`, group = 1)) +
+  geom_line(color = "#05314D", lwd = 1) +
+  geom_point(color = "lightblue", size = 2) +
+  labs(title = 'Default rates peaked in Q4 of 2007 \nroughly nine times above the average line',
+       x = 'Date',
+       y = 'Default Rate') +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, size = 18),
+        axis.title = element_text(size = 14),
+        axis.text = element_text(size = 10)) +
+  geom_hline(yintercept = mean(def_rate$`Default rate`), linetype = "dashed", color = "purple") +
+  transition_reveal(Date) +
+  ease_aes('linear')
+
+# Show the animation
+animate(animated_plot)
+```
+
+<br>
+
+```{r 2, echo = FALSE, fig.width=10, fig.height = 5, fig.cap="Exploratory analysis of credit scores and its association with default rate (2007 vs. 2019)."}
+# Sample data for credit scores in 2007 and 2019
+credit_scores_2007 <- data_07$CSCORE_B
+credit_scores_2019 <- data_19$CSCORE_B
+
+# Create a data frame for the histograms
+credit_data <- data.frame(
+  Year = c(rep("2007", length(credit_scores_2007)), rep("2019", length(credit_scores_2019))),
+  Credit_Score = c(credit_scores_2007, credit_scores_2019)
+)
+
+ggplot(credit_data, aes(x = Credit_Score, fill = Year)) +
+  geom_histogram(binwidth = 20, position = "dodge", alpha = 0.8) + 
+  geom_vline(data = subset(credit_data, Year == "2007"), aes(xintercept = mean(Credit_Score)), 
+             color = "red", linetype = "dashed", lwd = 1) +
+  geom_vline(data = subset(credit_data, Year == "2019"), aes(xintercept = mean(Credit_Score)), 
+             color = "darkgreen", linetype = "dashed", lwd = 1) +
+  geom_text(aes(x = mean(Credit_Score), label = paste("2007 Mean:", round(mean(Credit_Score), 1)), 
+                y = Inf, vjust = 3), data = subset(credit_data, Year == "2007"), color = "red") +
+  geom_text(aes(x = mean(Credit_Score), label = paste("2019 Mean:", round(mean(Credit_Score), 1)), 
+                y = Inf, vjust = 1), data = subset(credit_data, Year == "2019"), color = "darkgreen") +
+  labs(title = "Whilst both distributions are postively skewed, \nthe 2019 skewness is more agressive than 2007.",
+       x = "Credit Score",
+       y = "Frequency",
+       fill = "Year") +
+  scale_fill_manual(values = c("2007" = "lightblue", "2019" = "lightgreen")) +
+  theme_minimal() +
+  theme(legend.position = "top",
+        legend.title = element_blank(),
+        legend.text = element_text(size = 12),
+        plot.title = element_text(size = 18, hjust = 0.5),
+        axis.title = element_text(size = 14),
+        axis.text = element_text(size = 12))
+```
+
+<br>
+
+```{r 3, echo = FALSE, fig.width=10, fig.height = 5, fig.cap="Exploratory analysis of credit scores and its association with default rate (2007 vs. 2019)."}
+# Create the plot
+ggplot(default_rate_by_credit_07, aes(x = CREDIT_SCORE_RANGE, y = DEFAULT_RATE, fill = CREDIT_SCORE_RANGE)) +
+  geom_bar(stat = "identity", width = 0.7, show.legend = FALSE) +
+  scale_fill_brewer(palette = "Accent") + 
+  labs(title = "Buyers with Poor and Fair scores have the highest default rates.",
+       x = "Credit Score Range",
+       y = "Default Rate") +
+  theme_minimal() +
+  theme(plot.title = element_text(size = 18),
+        axis.title = element_text(size = 14),
+        axis.text.x = element_text(hjust = 1), 
+        axis.text = element_text(size = 12))
+
+ggplot(default_rate_by_credit_19, aes(x = CREDIT_SCORE_RANGE, y = DEFAULT_RATE, fill = CREDIT_SCORE_RANGE)) +
+  geom_bar(stat = "identity", width = 0.7, show.legend = FALSE) +
+  scale_fill_brewer(palette = "Accent") + 
+  labs(title = "No buyers in 2019 had Poor scores, \nbut the fair category has the highest default rate.",
+       x = "Credit Score Range",
+       y = "Default Rate") +
+  theme_minimal() +
+  theme(plot.title = element_text(size = 18),
+        axis.title = element_text(size = 14),
+        axis.text.x = element_text(hjust = 1), 
+        axis.text = element_text(size = 12))
+```
+
+<br>
+
+```{r 4,echo = FALSE, fig.width=10, fig.height = 5, fig.cap="Original unpaid principal balance by Credit Score Range for 2007 and 2019"}
+orig_upb_by_credit_07$Year <- "2007"
+orig_upb_by_credit_19$Year <- "2019"
+
+orig_upb_by_credit_combined <- bind_rows(orig_upb_by_credit_07, orig_upb_by_credit_19)
+
+# Create a stacked bar plot with data labels
+ggplot(orig_upb_by_credit_combined, aes(x = CREDIT_SCORE_RANGE, y = ORIG_UPB, fill = Year)) +
+  geom_bar(stat = "identity", position = "stack") +
+  geom_text(aes(label = round(ORIG_UPB,2)), position = position_stack(vjust = 0.5), color = "black", size = 3.5) +
+  scale_fill_manual(values = c("2007" = "lightblue", "2019" = "lightgreen")) + 
+  labs(title = "The average unpaid principal balance in 2007 was still relatively high \ngiven the the 17-year gap today.",
+       x = "Credit Score Range",
+       y = "Original unpaid principal balance") +
+  theme_minimal() +
+  theme(plot.title = element_text(size = 18),
+        axis.title = element_text(size = 14),
+        axis.text.x = element_text(hjust = 1),
+        axis.text = element_text(size = 12),
+        legend.title = element_blank())
+```
+
+```{r 5, echo = FALSE, fig.width=10, fig.height = 7, fig.cap="Original Loan to Value Ratio Classified by First-Time Homebuyer (2007)"}
+data_07_clean <- data_07 %>%
+  filter(!is.na(FIRST_FLAG))
+
+# Plot OLTV classified by FIRST_FLAG
+ggplot(data_07_clean, aes(x = OLTV, fill = FIRST_FLAG)) +
+  geom_density(alpha = 0.6) + 
+  labs(title = "In 2007, The most common loan-to-value ratio for first-time \nand returning homebuyers was between 75 and 100.",
+       x = "Original Loan to Value Ratio",
+       y = "Density",
+       fill = "Buyer Type") + 
+  scale_fill_manual(values = c("First-Time" = "#3498db", "Returning" = "#e74c3c")) + theme_minimal() +
+  theme(plot.title = element_text(size = 20, hjust=0.5),
+        legend.position = "top",
+        legend.title = element_text(size = 14),
+        legend.text = element_text(size = 12),
+        axis.title = element_text(size = 16),
+        axis.text = element_text(size = 12))
+```
+
+<br>
+
+```{r 6, echo = FALSE, fig.width=10, fig.height = 7, fig.cap="Original Loan to Value Ratio Classified by First-Time Homebuyer (2019)"}
+# Plot OLTV classified by FIRST_FLAG
+ggplot(data_19, aes(x = OLTV, fill = FIRST_FLAG)) +
+  geom_density(alpha = 0.6) + 
+  labs(title = "In 2019, first-time homebuyers tended to have lower loan-to-value \nratios compared to repeat buyers.",
+       x = "Original Loan to Value Ratio",
+       y = "Density",
+       fill = "Buyer Type") + 
+  scale_fill_manual(values = c("First-Time" = "#3498db", "Returning" = "#e74c3c")) + theme_minimal() +
+  theme(plot.title = element_text(size = 20, hjust=0.5),
+        legend.position = "top",
+        legend.title = element_text(size = 14),
+        legend.text = element_text(size = 12),
+        axis.title = element_text(size = 16),
+        axis.text = element_text(size = 12))
+```
+
+<br>
+
+```{r 7, echo = FALSE, fig.width=12, fig.height = 5, fig.cap="Default Rate by State in 2007"}
+# Create interactive map plot with default rates by state
+map_plot_07 <- plot_ly(data = default_rate_by_state_07, z = ~DEFAULT_FLAG, locations = ~STATE, 
+                type = 'choropleth', locationmode = 'USA-states', color = ~DEFAULT_FLAG, colorscale = 'YlGnBu', marker = list(line = list(color = 'rgb(255,255,255)', width = 1))) %>% colorbar(title = "Default Rate") %>% 
+  add_trace(text = ~paste("State: ", STATE, "<br>Default Rate: ", round(DEFAULT_FLAG * 100, 2), "%"), 
+            hoverinfo = "text") %>%
+  layout(title = 'Coastal states have some of the highest default rates, \nwith Nevada, Arizona and California being some of the highest',
+         geo = list(
+           scope = 'usa',
+           showlakes = TRUE, 
+           lakecolor = 'rgb(173,216,230)',
+           bgcolor = 'rgba(245,246,249,1)',
+           subunitcolor = "rgb(255, 255, 255)", 
+           landcolor = 'rgb(237, 247, 246)' 
+         ))
+
+map_plot_07
+```
+
+<br>
+
+```{r 8, echo = FALSE, fig.width=12, fig.height = 5, fig.cap="Default Rate by State in 2019"}
+# Create interactive map plot with default rates by state
+map_plot_19 <- plot_ly(data = default_rate_by_state_19, z = ~DEFAULT_FLAG, locations = ~STATE, 
+                type = 'choropleth', locationmode = 'USA-states', color = ~DEFAULT_FLAG,
+                colorscale = 'YlGnBu', # This colorscale offers a visually appealing gradient
+                marker = list(line = list(color = 'rgb(255,255,255)', width = 1))) %>% # White state borders
+  colorbar(title = "Default Rate") %>% # Adjust colorbar title for clarity
+  add_trace(text = ~paste("State: ", STATE, "<br>Default Rate: ", round(DEFAULT_FLAG * 100, 2), "%"), 
+            hoverinfo = "text") %>%
+  layout(title = 'Compared to 2007, in 2019 the coastal states \nhave reduced in default rates significantly.',
+         geo = list(
+           scope = 'usa',
+           showlakes = TRUE, 
+           lakecolor = 'rgb(173,216,230)', # Light blue for lakes
+           bgcolor = 'rgba(245,246,249,1)', # Light grey background
+           subunitcolor = "rgb(255, 255, 255)", # White subunit borders for clearer state lines
+           landcolor = 'rgb(237, 247, 246)' # Soft land color for contrast
+         ))
+
+# Display interactive map plot
+map_plot_19
+```
